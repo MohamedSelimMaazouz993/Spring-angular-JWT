@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="app-title">Task Flow</span>
+
+  <span class="spacer"></span>
+
+  <div class="user-actions" *ngIf="authService.isAuthenticated$ | async">
+    <span class="welcome-message" *ngIf="authService.currentUser$ | async as user">
+      Welcome, {{ user?.username }}!
+    </span>
+
+    <button mat-icon-button [matMenuTriggerFor]="userMenu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item (click)="openUserManagement()"
+              *ngIf="(authService.currentUser$ | async)?.roles?.includes('ADMIN')">
+        <mat-icon>people</mat-icon>
+        <span>User Management</span>
+      </button>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
+
+<div class="content-container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="app-footer">
+  <div class="footer-content">
+    <p>© {{ currentYear }} Task Flow. All rights reserved.</p>
+  </div>
+</footer>

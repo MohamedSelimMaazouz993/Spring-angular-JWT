@@ -1,0 +1,21 @@
+{
+  "name": "spring-angular-jwt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "concurrently \"npm run client\" \"npm run start:backend\"",
+    "client": "cd client && ng serve --o  ",
+    "start:backend": "cd backend && mvn install && mvn spring-boot:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "spring-angular-jwt": "file:"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
