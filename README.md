@@ -18,7 +18,7 @@ This is a full-stack web application with an Angular frontend and a Spring Boot 
 
 ### 🔧 Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Node.js](https://nodejs.org/) (v22.18+ recommended)
 - [Angular 19](https://angular.io/cli)
 - [Java 21+](https://adoptopenjdk.net/)
 - [Maven](https://maven.apache.org/) (or use Maven Wrapper `./mvnw`)
