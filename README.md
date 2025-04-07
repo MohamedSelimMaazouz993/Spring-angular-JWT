@@ -63,10 +63,10 @@ http://localhost:4200
 
 🔹 API Endpoints (Spring Boot) :
 
-Method Endpoint Description
-POST /api/auth/login Authenticate user
-POST /api/auth/register Register new user
-GET /api/user/profile Protected route
+# Method    Endpoint            Description
+# POST    /api/auth/login      Authenticate user
+# POST    /api/auth/register   Register new user
+# GET     /api/users           Protected route
 
 ---
 
