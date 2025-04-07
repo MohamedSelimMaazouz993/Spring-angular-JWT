@@ -6,13 +6,9 @@ This is a full-stack web application with an Angular frontend and a Spring Boot 
 
 ## 📁 Project Structure
 
-project-root/
- ├── client/ # Angular app
- └── server/ # Spring Boot app
-
-yaml
-Copy
-Edit
+### project-root/
+### ├── client/ # Angular app
+### └── server/ # Spring Boot app
 
 ---
 
@@ -42,6 +38,10 @@ cd server
 
 http://localhost:8080
 
+
+---
+
+
 💻 Frontend - Angular (client) :
 
 🔹 Setup & Run
@@ -57,6 +57,9 @@ ng serve --o
 http://localhost:4200
 
 
+---
+
+
 🔐 JWT Auth Flow :
 
 🔹 API Endpoints (Spring Boot) :
@@ -65,6 +68,9 @@ Method	    Endpoint	        Description
 POST	/api/auth/login	     Authenticate user
 POST	/api/auth/register	 Register new user
 GET	    /api/user/profile	 Protected route
+
+
+---
 
 
 🔹 PostMan Curl For Admin User:
