@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"npm run client\" \"npm run start:backend\"",
-    "client": "cd client && ng serve --o  ",
-    "start:backend": "cd backend && mvn install && mvn spring-boot:run"
+    "dev": "concurrently \"npm run client\" \"npm run start:backend\"",
+    "client": "npm install && cd client && npm install &&ng serve --o  ",
+    "start:backend": "npm install && cd backend && mvn install && mvn spring-boot:run"
   },
   "keywords": [],
   "author": "",
